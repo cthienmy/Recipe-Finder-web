@@ -2,7 +2,7 @@
  
     
     <div class="item-food">
-      <img v-bind:src="itemFood.imgItemFood"/>
+      <img class="img-item-food" v-bind:src="itemFood.imgItemFood" width="120" height="100"/>
       <div>{{itemFood.imgTitleFood}}</div>
     </div>
     
@@ -23,6 +23,9 @@ export default {
 </script>
 <style>
 .item-food{
-  width: 120px;
+  margin-right: 10px;
+}
+.img-item-food{
+  
 }
 </style>
