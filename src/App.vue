@@ -38,9 +38,10 @@ import img6 from './assets/img6.jpeg';
       </div>
       <!--  -->
       <div class="suggestions">
-        
-        <GroupChoices v-for="(itemGroupChoices,index) in groupChoices" v-bind:itemGroupChoices="itemGroupChoices" v-bind:key="itemGroupChoices"/>
-        
+
+        <GroupChoices v-for="(itemGroupChoices, index) in groupChoices" v-bind:itemGroupChoices="itemGroupChoices"
+          v-bind:key="itemGroupChoices" />
+
       </div>
     </div>
     <!--  
@@ -77,16 +78,16 @@ export default {
 
       ],
       groupChoices: [
-         {
+        {
           titleChoice: "Popular Choices",
-          listItem:[
+          listItem: [
             {
               imgItemFood: img1,
-              imgTitleFood:"Yam Fries"
+              imgTitleFood: "Yam Fries"
             },
             {
               imgItemFood: img2,
-              imgTitleFood:"Yam Fries"
+              imgTitleFood: "Yam Fries"
             },
             // {
             //   imgItemFood: img3,
@@ -97,17 +98,17 @@ export default {
             //   imgTitleFood:"Yam Fries"
             // }
           ]
-         },
-         {
+        },
+        {
           titleChoice: "Best Desserts",
-          listItem:[
+          listItem: [
             {
               imgItemFood: img1,
-              imgTitleFood:"Yam Fries"
+              imgTitleFood: "Yam Fries"
             },
             {
               imgItemFood: img2,
-              imgTitleFood:"Yam Fries"
+              imgTitleFood: "Yam Fries"
             },
             // {
             //   imgItemFood: img3,
@@ -118,10 +119,10 @@ export default {
             //   imgTitleFood:"Yam Fries"
             // }
           ]
-         }
+        }
       ]
     }
-  
+
   }
 }
 </script>

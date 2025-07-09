@@ -1,7 +1,5 @@
-
-
 <template>
-<!-- 
+  <!-- 
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
     <h3>
@@ -11,39 +9,40 @@
     </h3>
   </div>
    -->
-   <div class="item-food-type">
-          <img class="img-round" v-bind:src="itemFoodType.imgItem" width="90" height="60" />
-          <a class="link-foods" href="#"><div class="link-food-type">{{ itemFoodType.imgTitle}}</div></a>
-   </div>
+  <div class="item-food-type">
+    <img class="img-round" v-bind:src="itemFoodType.imgItem" width="90" height="60" />
+    <a class="link-foods" href="#">
+      <div class="link-food-type">{{ itemFoodType.imgTitle }}</div>
+    </a>
+  </div>
 </template>
 <script>
-import GroupChoices from './GroupChoices.vue';
 
-   export default {
-    name: "itemFoodType",
-    props:{
-      itemFoodType: Object,
-      groupChoices: Object,
-    }
-   }
+export default {
+  name: "itemFoodType",
+  props: {
+    itemFoodType: Object,
+  }
+}
 </script>
 
 <style scoped>
 .item-food-type {
   width: 100px;
-  
+
 }
 
 .link-food-type {
   text-align: center;
 }
-.link-foods{
-  
-}
+
+.link-foods {}
+
 .img-round {
   border-radius: 10px;
   width: 100%;
 }
+
 /*  
 h1 {
   font-weight: 500;
