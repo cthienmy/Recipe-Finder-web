@@ -18,7 +18,7 @@ import img6 from './assets/img6.jpeg';
   <div class="border-phone">
     <div class="header">
       <div class="title">
-        <div class="title-text">Recipe Finder</div>
+        <div class="title-text text-red-500">Recipe Finder</div>
         <input class="input-recipe" />
       </div>
       <!--  -->
